@@ -2,6 +2,8 @@ name: Trigger increment action in webapp-server
 
 on:
   push:
+    branches-ignore:
+      - '!integration'
     tags:
       - v*
 
